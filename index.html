@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Plain Shop</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="phone">
+  <div class="notch"></div>
+  <div class="display">
+
+    <header class="topbar">
+      <h1 class="logo">PLAIN SHOP</h1>
+      <button class="cart-chip">
+        <svg viewBox="0 0 24 24" class="ic"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Cart (2)
+      </button>
+    </header>
+
+    <div class="content">
+      <label class="label" for="amount">spend amount</label>
+      <div class="input-box"><span class="rupee">₹</span><input id="amount" type="number" placeholder="Enter amount in ₹" /></div>
+      <button class="btn-gradient">start to purchase
+        <svg viewBox="0 0 24 24" class="ic"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" class="ic muted"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input type="text" placeholder="Search products" />
+        <button class="mini-btn"><svg viewBox="0 0 24 24" class="ic"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></button>
+        <button class="mini-btn"><svg viewBox="0 0 24 24" class="ic"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+      </div>
+
+      <section class="banner">
+        <div class="banner-head">
+          <h2 class="banner-title">Discount</h2>
+          <span class="badge">5% OFF</span>
+          <div class="dots"><i class="on"></i><i></i><i></i></div>
+        </div>
+        <div class="banner-body">
+          <img class="banner-img" src="broccoli-small.jpg" alt="Fresh broccoli" />
+          <div>
+            <h3 class="banner-product">Fresh Broccoli</h3>
+            <p class="banner-sub">Ready to steam or roast.</p>
+            <p class="banner-price">₹24.00 → ₹22.80 / kg</p>
+          </div>
+        </div>
+        <button class="btn-gradient shop-now">Shop now
+          <svg viewBox="0 0 24 24" class="ic"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </section>
+
+      <h2 class="section-title">Shop by category</h2>
+      <div class="chips"><button class="chip">Vegetables</button><button class="chip">Fruits</button><button class="chip">Snacks</button></div>
+
+      <h2 class="section-title">Popular products</h2>
+      <div class="products">
+        <article class="card">
+          <div class="card-img"><img src="broccoli.jpg" alt="Fresh broccoli" /><span class="badge badge-abs">5% OFF</span></div>
+          <h3 class="p-name">Fresh broccoli</h3><p class="p-meta">Organic · Green</p>
+          <p class="p-price"><s>₹24.00</s> ₹22.80</p>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="apples.jpg" alt="Red apples" /></div>
+          <h3 class="p-name">Red apples</h3><p class="p-meta">Fresh · Red</p>
+          <p class="p-price">₹18.00</p>
+        </article>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a class="nav-item active" href="#"><svg viewBox="0 0 24 24" class="ic"><path d="M4 11l8-7 8 7v9H4z"/><path d="M10 20v-6h4v6"/></svg>Home</a>
+      <a class="nav-item" href="#"><svg viewBox="0 0 24 24" class="ic"><rect x="4" y="4" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1"/></svg>Shop</a>
+      <a class="nav-item" href="#"><svg viewBox="0 0 24 24" class="ic"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Cart (2)</a>
+      <a class="nav-item" href="#"><svg viewBox="0 0 24 24" class="ic"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 9h6M9 13h6"/></svg>Orders</a>
+      <a class="nav-item" href="#"><svg viewBox="0 0 24 24" class="ic"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>Account</a>
+    </nav>
+    <div class="home-bar"></div>
+  </div>
+</div>
+</body>
+</html>
